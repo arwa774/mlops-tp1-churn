@@ -1,3 +1,14 @@
+## TP3 : MLflow
+
+1. Quel est le meilleur modèle ? Je peux le prouver : MLflow trie les runs par f1
+   et les résultats sont conservés avec leur date. Essai-1 et essai-3 sont à
+   égalité (f1 = 0.889), essai-2 est plus faible (f1 = 0.333).
+2. Peut-on redonner exactement le modèle de l'Essai 1 ? Oui, avec
+   mlflow.sklearn.load_model("runs:/<id>/model"), grâce à l'identifiant du run.
+3. Un camarade peut-il reproduire mon travail ? En partie : le code, les
+   paramètres et les versions sont connus, mais pas l'environnement identique.
+   Docker résoudra ce problème.
+
 ## TP4 : Registry et API
 
 1. Comment désigner officiellement le modèle à utiliser ? Avec l'alias champion :
